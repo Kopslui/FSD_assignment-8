@@ -1,0 +1,48 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and HTML should occupy full height */
+  html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+  }
+  
+  /* Container that holds the header, main content, and footer */
+  .App {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Full height of the viewport */
+    min-height: 100vh; /* Ensures the page takes at least full viewport height */
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it's always on top */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Main content area */
+  .main-content { 
+    flex: 1; /* Takes up all available space between header and footer */
+    padding-top: 200px; /* Add padding to push content below the header */
+    padding-bottom: 10px; /* Add padding to push content above the footer */
+    overflow-y: auto; /* Allows content to scroll */
+  }
+  
+ 
